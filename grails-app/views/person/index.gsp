@@ -20,9 +20,10 @@
             </g:if>
             <f:table collection="${personList}" />
 
-            <div class="pagination">
-                <g:paginate total="${personCount ?: 0}" />
-            </div>
+            <g:if test="${personCount > 10}"><div class="pagination">
+                <g:paginate max="10" total="${personCount ?: 0}" />
+            </div></g:if>
+
         </div>
     </body>
 </html>
