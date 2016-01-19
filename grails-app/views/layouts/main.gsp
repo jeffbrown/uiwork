@@ -20,8 +20,6 @@
     <g:layoutHead/>
 </head>
 <body>
-    <asset:image src="grails_logo.png" alt="Grails"/>
-
     <div class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
