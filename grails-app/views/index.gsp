@@ -4,8 +4,7 @@
     <meta name="layout" content="main"/>
     <title>Welcome to Grails</title>
 
-    <!--TODO: How do I turn this into a grails asset tag?-->
-    <link href="assets/favicon.ico" type="image/x-ico" rel="icon">
+    <asset:link rel="icon" href="favicon.ico" type="image/x-ico" />
 </head>
 <body>
 

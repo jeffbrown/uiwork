@@ -20,7 +20,7 @@
     <g:layoutHead/>
 </head>
 <body>
-    <!--<div id="grailsLogo" role="banner"><a href="http://grails.org"><asset:image src="grails_logo.png" alt="Grails"/></a></div>-->
+    <asset:image src="grails_logo.png" alt="Grails"/>
 
     <div class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container">
