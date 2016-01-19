@@ -10,7 +10,9 @@
 <body>
 
     <div class="svg" role="presentation">
-        <div id="band" class="band"></div>
+        <div class="grails-logo-container">
+            <img src="https://grails.org/img/grails-cupsonly-logo-white.svg" class="grails-logo" />
+        </div>
     </div>
 
     <div id="content" role="main">

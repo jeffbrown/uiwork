@@ -116,7 +116,6 @@ img {
 /* NAVIGATION MENU */
 
 .nav {
-    padding: 0.5em 0.75em;
     zoom: 1;
 }
 
@@ -564,4 +563,17 @@ th:hover, tr:hover {
 a.skip {
     position: absolute;
     left: -9999px;
+}
+
+.grails-logo-container {
+    background:#79b94c no-repeat 50% 30%;
+    margin-bottom: 20px;
+    color: white;
+    height:300px;
+    text-align:center;"
+}
+
+img.grails-logo {
+    height:340px;
+    margin-top:-10px;
 }
