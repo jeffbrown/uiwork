@@ -8,18 +8,15 @@
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <!-- TODO: Bootstrap - Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous"/>
-
-    <!--TODO: Grails.org site's stylesheet - -->
     <link rel="stylesheet" type="text/css" href="https://grails.org/css/style.css"/>
-
     <asset:stylesheet src="application.css"/>
-    <asset:javascript src="application.js"/>
 
     <g:layoutHead/>
+
 </head>
 <body>
+
     <div class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -37,41 +34,7 @@
             </div>
             <div class="navbar-collapse collapse" aria-expanded="false" style="height: 0.8px;">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Application Status <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Environment: ${grails.util.Environment.current.name}</a></li>
-                            <li><a href="#">App profile: ${grailsApplication.config.grails?.profile}</a></li>
-                            <li><a href="#">App version:
-                                <g:meta name="info.app.version"/></a>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Grails version:
-                                <g:meta name="info.app.grailsVersion"/></a>
-                            </li>
-                            <li><a href="#">Groovy version: ${GroovySystem.getVersion()}</a></li>
-                            <li><a href="#">JVM version: ${System.getProperty('java.version')}</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artefacts <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Controllers: ${grailsApplication.controllerClasses.size()}</a></li>
-                            <li><a href="#">Domains: ${grailsApplication.domainClasses.size()}</a></li>
-                            <li><a href="#">Services: ${grailsApplication.serviceClasses.size()}</a></li>
-                            <li><a href="#">Tag Libraries: ${grailsApplication.tagLibClasses.size()}</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Installed Plugins <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
-                                <li><a href="#">${plugin.name} - ${plugin.version}</a></li>
-                            </g:each>
-                        </ul>
-                    </li>
+                    <g:pageProperty name="page.nav" />
                 </ul>
             </div>
         </div>
@@ -85,9 +48,8 @@
         <g:message code="spinner.alt" default="Loading&hellip;"/>
     </div>
 
-    <asset:javascript src="jquery-2.1.3.js"/>
-
-    <!-- TODO: Bootstrap - Latest compiled and minified JavaScript -->
+    <asset:javascript src="application.js"/>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
